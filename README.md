@@ -5,7 +5,7 @@ Ready-to-run Docker image with Grafana.
 ## Quickstart
 
 ```bash
-$ docker run --name grafana -e waterscape/grafana:latest
+$ docker run --name grafana -e alxshelepenok/grafana:latest
 ```
 
 ## Building
@@ -21,7 +21,7 @@ version: "3.9"
 
 services:
   grafana:
-    image: waterscape/grafana:latest
+    image: alxshelepenok/grafana:latest
     volumes:
       - grafana-data:/var/lib/grafana
       - ./grafana/plugins:/var/lib/grafana/plugins
